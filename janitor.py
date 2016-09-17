@@ -1,5 +1,7 @@
 from django.http import HttpResponse
+
 from HTMLParser import HTMLParser
+from utils.Exceptions import IncorrectResponseError
 
 
 class janitor(object):
@@ -15,3 +17,5 @@ class janitor(object):
             parser.css_parser()
 
             return HttpResponse(parser.soup)
+        else:
+            raise IncorrectResponseError
