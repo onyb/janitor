@@ -3,3 +3,5 @@ django
 csscompressor
 cssutils
 nose
+lxml
+bs4
