@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 
-from HTMLParser import HTMLParser
 from utils.Exceptions import IncorrectResponseError
+from utils.HTMLParser import HTMLParser
 
 
 class janitor(object):
